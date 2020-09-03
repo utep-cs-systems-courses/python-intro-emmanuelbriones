@@ -11,3 +11,8 @@ inputFile = sys.argv[1]
 outputFile = sys.argv[2]
 
 dictionaryOfWords = {}
+
+if not os.path.exists(inputFile):
+    print("File %s does not exist" % inputFile)
+    exit()
+
